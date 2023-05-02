@@ -12,10 +12,23 @@ body{
     font-family: 'Vazir-FD';
 }
 
+.backdrop{
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .main-header {
     width: 100%;
     background: #1565c0;
     padding: 0.5rem 1rem;
+    position: fixed;
+  z-index:1 ;
 }
 
 .main-header > div{
@@ -69,7 +82,7 @@ body{
     color: #1565c0;
   }
   
-  /* .main-footer {
+  .main-footer {
     background: #424242;
     padding: 2rem;
     grid-area: footer;
@@ -95,4 +108,4 @@ body{
   .main-footer__link a:hover,
   .main-footer__link a:active {
     color: #e0e0e0;
-  } */
+  }
